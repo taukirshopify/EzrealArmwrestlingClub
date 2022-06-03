@@ -1,0 +1,367 @@
+// Responsive Mixin 
+@mixin breakpoint($point) {
+
+    // 576 to Upper
+    @if $point == hhxsmall {
+        @media (min-width: 240px) and (max-width: 992px) { 
+            @content ; 
+        }
+    }
+    // 576 to Upper
+    @if $point == xsmall {
+        @media (min-width: 250px) { 
+            @content ; 
+        }
+    }
+    // 576 to Upper
+    @if $point == cxsmall {
+        @media (min-width: 200px) and (max-width: 300px) { 
+            @content ; 
+        }
+    }
+
+    // 576 to Upper
+    @if $point == small {
+        @media (min-width: 576px) { 
+            @content ; 
+        }
+    }
+    // 576 to Upper
+    @if $point == small-m {
+        @media (max-width: 576px) { 
+            @content ; 
+        }
+    }
+
+    // 768 to Upper
+    @if $point == medium {
+        @media (min-width: 768px) { 
+            @content ; 
+        }
+    }
+
+    // 998 to Upper
+    @if $point == large {
+        @media (min-width: 992px) { 
+            @content ; 
+        }
+    }
+
+    // 1200 to Upper
+    @if $point == xlarge {
+        @media (min-width: 1200px) { 
+            @content ; 
+        }
+    }
+
+    // 1400 to Upper
+    @if $point == xxlarge {
+        @media (min-width: 1400px) { 
+            @content ; 
+        }
+    }
+
+    // 1800 to Upper
+    @if $point == xxxlarge {
+        @media (min-width: 1800px) { 
+            @content ; 
+        }
+    }
+
+}
+
+.top-icon-with-review{
+	.top-icon-with-review{
+	ul{
+		margin: 0;
+		padding: 0!important;
+		li{
+			display: inline-block;
+			line-height: 1;
+			
+			
+
+		}
+	}}
+	span{
+		color: #fff;
+		
+	}
+}
+
+.list-icon{
+	padding: 0;
+	margin-right: 10px;
+	li{
+		list-style-type:none;
+		margin: 0 2px;
+		svg {
+			fill: #fff;
+		}
+		
+	}
+}
+
+
+.c-btn{
+		-moz-user-select: none;
+		background:#fff;
+		
+		color: #000;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 14;
+		font-weight: 600;
+		border-radius: 0px;
+		letter-spacing: 1px;
+		line-height: 1;
+		margin-bottom: 0;
+		padding: 13px 25px;
+		text-align: center;
+		text-transform: uppercase;
+		touch-action: manipulation;
+		transition: all 0.3s ease 0s;
+		vertical-align: middle;
+		white-space: nowrap;
+		
+
+			
+			
+	border-radius: 7px;
+	
+	border: 1px solid #000;
+	
+	text-decoration: inherit;
+	font-family: system-ui;
+	
+	
+	border-image-slice: 1;
+
+
+}
+
+.c-btn:hover{
+	color: #fff;
+	border: 1px solid #fff;
+	background: #000;
+}
+
+.left-image-wrapper{
+	position: relative;
+	overflow: hidden;
+	
+	@include breakpoint(hhxsmall){
+	
+	
+		height: 284px;
+		
+		
+	}
+	@include breakpoint(xsmall){
+	
+	
+		height: 350px;
+		
+		
+	}
+	@include breakpoint(small){
+	
+	
+			height: 450px;
+		
+		
+	}
+	@include breakpoint(medium){
+	
+	
+		height: 550px;
+	
+	
+}
+	@include breakpoint(large){
+	
+	
+			height: auto;
+		
+		
+	}
+
+
+	.bannar-image{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		@include breakpoint(hhxsmall){
+
+			width: 120%;
+		}
+	
+		@include breakpoint(xsmall){
+   
+		}
+		
+		@include breakpoint(medium){
+			width: 100%;
+	
+			
+		}
+		@include breakpoint(large){
+		
+				width: 170%;
+			
+		
+	
+		}
+		@include breakpoint(xlarge){
+			width: 150%;
+		
+	
+		}
+		@include breakpoint(xxlarge){
+			width: 100%;
+			
+		}
+		
+	}
+	img{
+		width: 100%;
+		height: 100%;
+	
+	
+	
+	}
+}
+
+
+.hero-wrapper{
+	background-color: #000;
+
+	h1{
+		color: #ffffff;
+		font-size: 55px;
+		
+		@include breakpoint(small-m){
+			font-size: 35px;
+			
+		}
+		@include breakpoint(cxsmall){
+			font-size: 20px;
+			
+		}
+	}
+	p{
+		color: #d1cdcd;
+		font-size: 22px;
+		margin: 10px 0 ;
+		@include breakpoint(small-m){
+			font-size: 14px;
+			
+		}
+		@include breakpoint(cxsmall){
+			font-size: 11px;
+			
+		}
+	}
+	
+}
+
+.right-content-wrapp {
+
+	padding:  150px 20px 150px 20px;
+	@include breakpoint(hhxsmall){
+		text-align: center;
+	}
+}
+
+.bannar-product-details{
+	position: absolute;
+    left: 4%;
+    bottom: 10%;
+	
+    z-index: 100;
+    padding: 0 14px;
+    background: #000;
+	border-radius: 7px;
+	@include breakpoint(hhxsmall){
+	
+	
+		left: 50%;
+		margin-left: -160px;
+		
+		
+		
+	}
+	@include breakpoint(cxsmall){
+		left: 50%;
+		margin-left: -128px;
+		
+	}
+	h6{
+		color: #fff;
+		margin: 2px 70px 0 8px ;
+		
+		@include breakpoint(cxsmall){
+			
+				margin: 2px 9px 0 8px;
+			font-size: 14px;
+		}
+	}
+	span{
+		color: #fff;
+	}
+	.bannar-logo{
+		width: 50px;
+		padding: 8px 2px;
+		img{
+			height: auto;
+		}
+	}
+}
+
+// ================express start here =========== 
+
+.express-massage{
+	background-color: #000;
+}
+
+
+
+
+.express-massage h2{
+	padding: 40px 0;
+	font-size: 40px;
+	color: #fff;
+	@include breakpoint(small-m){
+		font-size: 25px;
+		
+	}
+	@include breakpoint(cxsmall){
+		font-size: 20px;
+		
+	}
+}
+
+
+.singel-modal-with-icon{
+	margin: 0 10px;
+	
+	@include breakpoint(cxsmall){
+		margin: 0 5px;
+	}
+	@include breakpoint(large){
+		margin: 0 50px;
+	}
+	@include breakpoint(xlarge){
+		margin: 0 67px;
+	}
+	img{
+		width: 100%;
+	}
+}
+// ================icon with pop start here =========== 
+
+.icon-with-modal{
+	margin: 20px 0;
+}
