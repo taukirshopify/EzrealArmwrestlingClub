@@ -8,6 +8,12 @@
 }
 .top-icon-with-review span {
   color: #fff;
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  .top-icon-with-review span {
+    font-size: 16px;
+  }
 }
 
 .list-icon {
@@ -132,12 +138,32 @@
 }
 @media (max-width: 576px) {
   .hero-wrapper h1 {
-    font-size: 35px;
+    font-size: 20px;
   }
 }
 @media (min-width: 200px) and (max-width: 300px) {
   .hero-wrapper h1 {
     font-size: 20px;
+  }
+}
+@media (min-width: 576px) {
+  .hero-wrapper h1 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .hero-wrapper h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .hero-wrapper h1 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-wrapper h1 {
+    font-size: 55px;
   }
 }
 .hero-wrapper p {
@@ -155,6 +181,26 @@
     font-size: 11px;
   }
 }
+@media (min-width: 576px) {
+  .hero-wrapper p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  .hero-wrapper p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  .hero-wrapper p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-wrapper p {
+    font-size: 22px;
+  }
+}
 
 .right-content-wrapp {
   padding: 150px 20px 150px 20px;
@@ -162,7 +208,12 @@
 @media (min-width: 240px) and (max-width: 992px) {
   .right-content-wrapp {
     text-align: center;
-    padding: 80px 20px 80px 20px;
+    padding: 37px 20px 40px 20px;
+  }
+}
+@media (min-width: 992px) {
+  .right-content-wrapp {
+    padding: 150px 20px 150px 20px;
   }
 }
 
@@ -214,17 +265,32 @@
 
 .express-massage h2 {
   padding: 40px 0;
-  font-size: 40px;
+  font-size: 20px;
   color: #fff;
 }
 @media (max-width: 576px) {
   .express-massage h2 {
-    font-size: 25px;
+    font-size: 18px;
   }
 }
 @media (min-width: 200px) and (max-width: 300px) {
   .express-massage h2 {
     font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .express-massage h2 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .express-massage h2 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  .express-massage h2 {
+    font-size: 35px;
   }
 }
 

@@ -85,6 +85,10 @@
 	}}
 	span{
 		color: #fff;
+		font-size: 12px;
+		@include breakpoint(medium){
+			font-size: 16px;
+		}
 		
 	}
 }
@@ -243,11 +247,27 @@
 		font-size: 55px;
 		
 		@include breakpoint(small-m){
-			font-size: 35px;
+			font-size: 20px;
 			
 		}
 		@include breakpoint(cxsmall){
 			font-size: 20px;
+			
+		}
+		@include breakpoint(small){
+			font-size: 25px;
+			
+		}
+		@include breakpoint(medium){
+			font-size: 30px;
+			
+		}
+		@include breakpoint(large){
+			font-size: 40px;
+			
+		}
+		@include breakpoint(xlarge){
+			font-size: 55px;
 			
 		}
 	}
@@ -263,6 +283,23 @@
 			font-size: 11px;
 			
 		}
+		@include breakpoint(small){
+			font-size: 12px;
+			
+		}
+		@include breakpoint(medium){
+			font-size: 14px;
+			
+		}
+		@include breakpoint(large){
+			font-size: 18px;
+			
+		}
+		@include breakpoint(xlarge){
+			font-size: 22px;
+			
+		}
+	
 	}
 	
 }
@@ -272,7 +309,12 @@
 	padding:  150px 20px 150px 20px;
 	@include breakpoint(hhxsmall){
 		text-align: center;
-		padding:  80px 20px 80px 20px;
+		padding: 37px 20px 40px 20px;
+	}
+
+	@include breakpoint(large){
+		padding:  150px 20px 150px 20px;
+		
 	}
 }
 
@@ -332,14 +374,26 @@
 
 .express-massage h2{
 	padding: 40px 0;
-	font-size: 40px;
+	font-size: 20px;
 	color: #fff;
 	@include breakpoint(small-m){
-		font-size: 25px;
+		font-size: 18px;
 		
 	}
 	@include breakpoint(cxsmall){
 		font-size: 20px;
+		
+	}
+	@include breakpoint(medium){
+		font-size: 30px;
+		
+	}
+	@include breakpoint(large){
+		font-size: 35px;
+		
+	}
+	@include breakpoint(xlarge){
+		font-size: 35px;
 		
 	}
 }
