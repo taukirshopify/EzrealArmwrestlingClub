@@ -162,6 +162,7 @@
 @media (min-width: 240px) and (max-width: 992px) {
   .right-content-wrapp {
     text-align: center;
+    padding: 80px 20px 80px 20px;
   }
 }
 
